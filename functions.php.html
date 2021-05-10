@@ -1,0 +1,42 @@
+
+<!-- saved from url=(0035)http://localhost/test/functions.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function() {
+			// injected DOM script is not a content script anymore,
+			// it can modify objects and functions of the page
+			var _pushState = history.pushState;
+			history.pushState = function(state, title, url) {
+				_pushState.call(this, state, title, url);
+				window.dispatchEvent(
+					new CustomEvent('state-changed', { detail: url })
+				);
+			};
+			// repeat the above for replaceState too
+		})();</script><script>(function() {
+			// injected DOM script is not a content script anymore,
+			// it can modify objects and functions of the page
+			var _pushState = history.pushState;
+			history.pushState = function(state, title, url) {
+				_pushState.call(this, state, title, url);
+				window.dispatchEvent(
+					new CustomEvent('state-changed', { detail: url })
+				);
+			};
+			// repeat the above for replaceState too
+		})();</script><script>(function() {
+			// injected DOM script is not a content script anymore,
+			// it can modify objects and functions of the page
+			var _pushState = history.pushState;
+			history.pushState = function(state, title, url) {
+				_pushState.call(this, state, title, url);
+				window.dispatchEvent(
+					new CustomEvent('state-changed', { detail: url })
+				);
+			};
+			// repeat the above for replaceState too
+		})();</script></head><body><br>
+<b>Fatal error</b>:  Uncaught ArgumentCountError: fopen() expects at least 2 arguments, 1 given in C:\xampp\htdocs\test\functions.php:7
+Stack trace:
+#0 C:\xampp\htdocs\test\functions.php(7): fopen('C:\\xampp\\tmp\\ph...')
+#1 {main}
+  thrown in <b>C:\xampp\htdocs\test\functions.php</b> on line <b>7</b><br>
+</body></html>
